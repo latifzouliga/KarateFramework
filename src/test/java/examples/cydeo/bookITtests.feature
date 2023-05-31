@@ -22,3 +22,9 @@ Scenario: Get user info and verify the user
     Then match response == expectedUser
 
 Scenario: Get campuses of the bookIT api and verify it by using a data json file
+  Given url baseUrl
+  And path 'api/campuses'
+  And header Authorization = 'Bearer',accessToken
+  When method GET
+  And def expectedCampuses = read('classpath:examples/data/campuses.json')
+  Then match response == expectedCampuses

@@ -6,6 +6,6 @@ class CydeoRunner {
 
     @Karate.Test
     Karate testFeatures() {
-        return Karate.run("bookStoreAPI").tags("@wip").relativeTo(getClass());
+        return Karate.run("dataDrivenTests").tags("@dataDriven").relativeTo(getClass());
     }
 }
