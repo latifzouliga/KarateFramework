@@ -1,3 +1,4 @@
+@smoke
 Feature: Testing different end points of spartan API
   Background:
     * def spartanUrl = "http://54.85.44.234:8000"
@@ -6,7 +7,7 @@ Scenario: Get one spartan and verify
   * def expectedSpartan = read("classpath:examples/data/expectedSpartan.json")
   Given url spartanUrl
   And path "api/spartans"
-  And path 101
+  And path 99
   And header Accept = 'application/json'
   When method get
   Then match response == expectedSpartan

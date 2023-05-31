@@ -1,3 +1,4 @@
+@smoke
 Feature: How to assert in Karate
   Background: Common steps for all scenarios in the feature file and also variables, definitions
     * def oneSpartan =

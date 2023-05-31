@@ -1,3 +1,4 @@
+@smoke
 Feature: Simple API body header status checks
 
   Background: Get all books

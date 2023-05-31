@@ -1,3 +1,4 @@
+@smoke
 Feature: Simple Karate scripts
   Scenario: How to print
     Given print "Hello World"
